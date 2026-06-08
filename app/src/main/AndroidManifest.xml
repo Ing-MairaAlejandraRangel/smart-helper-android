@@ -26,7 +26,7 @@
         <!-- Clave API de Google Maps -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCMLw66S9kvEFZNKn0_2NW1fTGWEg_8I9c" />
+            android:value="${MAPS_API_KEY}" />
 
         <!-- Actividades -->
         <activity android:name=".activities.CrearRecordatorioActivity" />
