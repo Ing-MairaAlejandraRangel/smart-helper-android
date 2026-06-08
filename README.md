@@ -142,7 +142,7 @@ jdc.trabajos.smarthelper
 
 Puedes visualizar una demostración completa de Smart Helper en el siguiente video:
 
-[▶ Ver video demostrativo](demo/smart-helper-demo.mp4)
+[▶ Ver video demostrativo en GitHub](https://github.com/Ing-MairaAlejandraRangel/smart-helper-android/blob/main/demo/smart-helper-demo.mp4)
 
 El video muestra:
 
