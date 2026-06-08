@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Instrucción para editar y eliminar -->
+    <TextView
+        android:id="@+id/textInfoEdicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toca un recordatorio para editarlo. Mantén presionado para eliminar."
+        android:textSize="14sp"
+        android:textColor="#888888"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Mensaje cuando la lista está vacía -->
+    <TextView
+        android:id="@+id/textoVacioCombinado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No hay recordatorios disponibles"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:visibility="gone"
+        android:layout_below="@id/textInfoEdicion"
+        android:layout_marginTop="8dp" />
+
+    <!-- RecyclerView para mostrar los recordatorios -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCombinado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textoVacioCombinado"
+        android:layout_above="@id/fabAgregar"
+        android:paddingTop="8dp" />
+
+    <!-- Botón flotante para agregar -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:contentDescription="Agregar recordatorio"
+        app:srcCompat="@drawable/ic_add" />
+</RelativeLayout>

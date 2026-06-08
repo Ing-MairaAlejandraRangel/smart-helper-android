@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_ajustes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Tema oscuro -->
+        <Switch
+            android:id="@+id/switchTemaOscuro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tema oscuro" />
+
+        <!-- Notificaciones -->
+        <Switch
+            android:id="@+id/switchNotificaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activar notificaciones" />
+
+        <!-- Sincronizar calendario -->
+        <Switch
+            android:id="@+id/switchSincronizarCalendario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sincronizar con Calendario" />
+
+        <!-- Configuración de Usuario -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configuración del usuario"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextNombreUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/editTextCorreoUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/buttonGuardarConfiguracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar configuración"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

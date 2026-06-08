@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="#E6CCFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textTituloGeo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Título"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textDescripcionGeo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textTituloGeo"
+            android:layout_marginTop="4dp"
+            android:text="Descripción"
+            android:textColor="#555555" />
+
+        <TextView
+            android:id="@+id/textCoordenadas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textDescripcionGeo"
+            android:layout_marginTop="6dp"
+            android:text="Lat: 0.0, Lng: 0.0"
+            android:textSize="12sp"
+            android:textColor="#777777" />
+
+        <!-- ✅ Botón para completar geo-recordatorio -->
+        <Button
+            android:id="@+id/btnCompletarGeo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✔"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

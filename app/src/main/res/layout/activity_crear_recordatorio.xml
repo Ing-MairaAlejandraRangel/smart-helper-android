@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="?android:attr/dividerHorizontal"
+        android:showDividers="middle"
+        android:dividerPadding="8dp">
+
+        <!-- Título + Micrófono -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/editTextTitulo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Título"
+                android:inputType="textCapSentences"
+                android:padding="10dp" />
+
+            <ImageButton
+                android:id="@+id/btnMicrofono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Micrófono"
+                android:src="@android:drawable/ic_btn_speak_now"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- Descripción -->
+        <EditText
+            android:id="@+id/editTextDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripción"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Fecha y Hora -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recordatorio por Fecha y Hora"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/buttonFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar Fecha" />
+
+        <Button
+            android:id="@+id/buttonHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar Hora" />
+
+        <TextView
+            android:id="@+id/textViewFechaHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha y hora no seleccionadas"
+            android:layout_marginTop="4dp"
+            android:textColor="@android:color/darker_gray" />
+
+        <Spinner
+            android:id="@+id/spinnerFrecuencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <!-- Geolocalización -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Geo-Recordatorio"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/tvUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ubicación seleccionada aparecerá aquí"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="8dp" />
+
+        <fragment
+            android:id="@+id/mapGeo"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/textRadioLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Radio (m):" />
+
+            <SeekBar
+                android:id="@+id/seekBarRadio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="500"
+                android:progress="100"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Botón Guardar -->
+        <Button
+            android:id="@+id/buttonGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

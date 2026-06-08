@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="24dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Texto de saludo personalizado -->
+    <TextView
+        android:id="@+id/textSaludo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hola "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Icono del asistente -->
+    <ImageView
+        android:src="@drawable/ic_smart_helper"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Asistente" />
+
+    <!-- Título -->
+    <TextView
+        android:text="Organiza tu día con Smart Helper"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Descripción -->
+    <TextView
+        android:text="Gestiona tus tareas, alertas y recordatorios de forma sencilla."
+        android:textSize="16sp"
+        android:textColor="#666"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Botón para crear nuevo recordatorio -->
+    <Button
+        android:id="@+id/btnCrearRecordatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Recordatorio"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="12dp"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

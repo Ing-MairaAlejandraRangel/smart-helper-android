@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Smart Helper</string>
+
+    <!-- Otros strings si los tienes -->
+
+    <!-- Frecuencias del recordatorio -->
+    <string-array name="frecuencias_array">
+        <item>Ninguna</item>
+        <item>Diaria</item>
+        <item>Semanal</item>
+        <item>Mensual</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

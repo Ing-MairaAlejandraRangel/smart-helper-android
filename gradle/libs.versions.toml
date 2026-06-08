@@ -1,0 +1,48 @@
+[versions]
+agp = "8.10.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.9.0"
+activity = "1.7.2"
+constraintlayout = "2.1.4"
+preference = "1.2.0"
+room = "2.5.2"
+maps = "18.2.0"
+location = "21.0.1"
+navigation = "2.7.7"
+kotlin = "2.1.10"
+playServicesMaps = "19.2.0"
+annotationJvm = "1.10.0"
+
+[libraries]
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+preference = { group = "androidx.preference", name = "preference", version.ref = "preference" }
+
+# ROOM
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+
+# MAPAS Y LOCALIZACIÓN
+maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "maps" }
+location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "location" }
+
+# NAVIGATION
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigation" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigation" }
+
+# KOTLIN
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin" }
+play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
+annotation-jvm = { group = "androidx.annotation", name = "annotation-jvm", version.ref = "annotationJvm" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
