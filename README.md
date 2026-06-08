@@ -138,6 +138,21 @@ jdc.trabajos.smarthelper
 - ConstraintLayout
 
 ---
+## 🎥 Video demostrativo
+
+Puedes visualizar una demostración completa de Smart Helper en el siguiente video:
+
+[▶ Ver video demostrativo](demo/smart-helper-demo.mp4)
+
+El video muestra:
+
+- Creación de recordatorios
+- Creación de geo-recordatorios
+- Selección de ubicación mediante Google Maps
+- Notificaciones
+- Historial de tareas
+- Configuración de usuario
+- Navegación mediante BottomNavigationView
 
 ## Capturas de pantalla
 
