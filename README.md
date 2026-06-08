@@ -139,29 +139,22 @@ jdc.trabajos.smarthelper
 
 ---
 
-## 📸 Capturas de Pantalla
+## Capturas de pantalla
 
-### 🏠 Pantalla de Inicio
+### Inicio
+![Inicio](screenshots/home.png)
 
-(Próximamente)
+### Crear Recordatorio
+![Crear Recordatorio](screenshots/create-reminder.png)
 
-### 📝 Crear Recordatorio
+### Recordatorios
+![Recordatorios](screenshots/reminders.png)
 
-(Próximamente)
+### Historial
+![Historial](screenshots/history.png)
 
-### 📍 Geo-Recordatorio
-
-(Próximamente)
-
-### 📚 Historial
-
-(Próximamente)
-
-### ⚙️ Configuración
-
-(Próximamente)
-
----
+### Ajustes
+![Ajustes](screenshots/settings.png)
 
 ## 📦 Requisitos
 
