@@ -1,247 +1,229 @@
 # 📱 Smart Helper
 
-Aplicación móvil Android desarrollada en Java para la gestión inteligente de recordatorios, geolocalización y organización personal.
+Aplicación móvil Android desarrollada en **Java** para la gestión inteligente de recordatorios, geo-recordatorios y organización personal mediante notificaciones, geolocalización y persistencia local.
 
 ---
 
 ## 📖 Descripción
 
-Smart Helper es una aplicación diseñada para ayudar a los usuarios a gestionar sus actividades diarias mediante recordatorios tradicionales y geo-recordatorios basados en ubicación.
+Smart Helper es una aplicación móvil diseñada para ayudar a los usuarios a organizar sus actividades diarias mediante recordatorios tradicionales y geo-recordatorios basados en ubicación.
 
-La aplicación permite programar tareas por fecha y hora, generar alertas automáticas, crear recordatorios asociados a una ubicación geográfica y administrar configuraciones personalizadas del usuario.
-
-Este proyecto fue desarrollado como proyecto académico de Ingeniería de Sistemas aplicando conceptos de desarrollo móvil, bases de datos locales, geolocalización, notificaciones y experiencia de usuario.
+El proyecto integra funcionalidades como programación de tareas, geofencing, reconocimiento de voz, historial de actividades y almacenamiento local utilizando Room Database y SQLite, ofreciendo una solución práctica para la gestión personal.
 
 ---
 
-## ✨ Funcionalidades
+## ✨ Características principales
 
-### 📝 Gestión de Recordatorios
-
-- Crear recordatorios personalizados.
-- Registrar título y descripción.
-- Seleccionar fecha y hora.
-- Configurar frecuencia de repetición.
-- Guardar información localmente.
-
-### 📍 Geo-Recordatorios
-
-- Selección de ubicación mediante Google Maps.
-- Configuración de radio de activación.
-- Geofencing.
-- Activación automática al ingresar o salir de una zona.
-
-### 🔔 Sistema de Notificaciones
-
-- Notificaciones locales.
-- Alertas programadas.
-- Posponer recordatorios por 10 minutos.
-- Canal de notificaciones personalizado.
-
-### 🎤 Reconocimiento de Voz
-
-- Captura de texto mediante voz.
-- Apoyo en la creación rápida de recordatorios.
-
-### 📅 Integración con Calendario
-
-- Solicitud de permisos de calendario.
-- Sincronización opcional.
-
-### 📚 Historial
-
-- Consulta de recordatorios completados.
-- Seguimiento de actividades realizadas.
-
-### ⚙️ Configuración
-
-- Datos del usuario.
-- Activación/desactivación de notificaciones.
-- Configuración de sincronización.
-- Soporte para tema visual.
+* Gestión inteligente de recordatorios personalizados.
+* Creación de geo-recordatorios utilizando Google Maps.
+* Activación automática mediante Geofencing.
+* Sistema de notificaciones locales programadas.
+* Reconocimiento de voz para facilitar la creación de tareas.
+* Historial de actividades y recordatorios completados.
+* Configuración personalizada del usuario.
+* Persistencia local mediante Room Database.
 
 ---
 
-## 🏗️ Arquitectura del Proyecto
+## 🛠️ Tecnologías utilizadas
+
+### Lenguaje
+
+* Java
+
+### Desarrollo móvil
+
+* Android Studio
+* Android SDK
+
+### Persistencia de datos
+
+* Room Database
+* SQLite
+
+### Geolocalización
+
+* Google Maps SDK
+* Google Play Services Location
+* Geofencing API
+
+### Navegación
+
+* Fragments
+* Navigation Component
+
+### Notificaciones
+
+* AlarmManager
+* BroadcastReceiver
+* NotificationCompat
+
+### Diseño
+
+* Material Design
+* ConstraintLayout
+
+---
+
+## 🏗️ Arquitectura del proyecto
 
 ```text
 jdc.trabajos.smarthelper
 │
 ├── activities
-│   ├── MainActivity
-│   ├── CrearRecordatorioActivity
-│   └── EditarGeoRecordatorioActivity
-│
 ├── adapters
-│
 ├── broadcasts
-│   └── GeofenceBroadcastReceiver
-│
 ├── database
-│   ├── AppDatabase
-│   └── RecordatorioDao
-│
 ├── fragments
-│   ├── InicioFragment
-│   ├── RecordatoriosFragment
-│   ├── HistorialFragment
-│   └── AjustesFragment
-│
 ├── helpers
-│   ├── AlertaReceiver
-│   ├── GeofenceHelper
-│   ├── NotificationHelper
-│   └── ReprogramarReceiver
-│
 └── models
-    └── Recordatorio
 ```
 
----
-
-## 🛠️ Tecnologías Utilizadas
-
-### Lenguaje
-
-- Java
-
-### Desarrollo Móvil
-
-- Android Studio
-- Android SDK
-
-### Persistencia de Datos
-
-- Room Database
-- SQLite
-
-### Geolocalización
-
-- Google Maps SDK
-- Google Play Services Location
-- Geofencing API
-
-### Navegación
-
-- Fragments
-- Navigation Component
-
-### Notificaciones
-
-- AlarmManager
-- BroadcastReceiver
-- NotificationCompat
-
-### Diseño
-
-- Material Design
-- ConstraintLayout
+La aplicación sigue una arquitectura modular que separa la lógica de negocio, persistencia de datos, interfaz de usuario y componentes auxiliares para facilitar el mantenimiento y la escalabilidad.
 
 ---
+
+## 📋 Funcionalidades
+
+### Gestión de recordatorios
+
+* Crear recordatorios personalizados.
+* Registrar título y descripción.
+* Configurar fecha, hora y frecuencia.
+* Almacenar información localmente.
+
+### Geo-recordatorios
+
+* Seleccionar ubicaciones mediante Google Maps.
+* Configurar radio de activación.
+* Activación automática mediante Geofencing.
+
+### Sistema de notificaciones
+
+* Notificaciones locales.
+* Alertas programadas.
+* Posponer recordatorios.
+* Canal de notificaciones personalizado.
+
+### Reconocimiento de voz
+
+* Captura de texto mediante voz.
+* Creación rápida de recordatorios.
+
+### Historial
+
+* Consulta de actividades completadas.
+* Seguimiento de recordatorios.
+
+### Configuración
+
+* Administración de preferencias del usuario.
+* Configuración de sincronización y notificaciones.
+
+---
+
 ## 🎥 Video demostrativo
 
-Puedes visualizar una demostración completa de Smart Helper en el siguiente video:
+El proyecto incluye una demostración funcional donde se presentan las principales características de la aplicación:
 
-[▶ Ver video demostrativo en GitHub](https://github.com/Ing-MairaAlejandraRangel/smart-helper-android/blob/main/demo/smart-helper-demo.mp4)
+* Creación de recordatorios.
+* Creación de geo-recordatorios.
+* Integración con Google Maps.
+* Sistema de notificaciones.
+* Historial de tareas.
+* Configuración del usuario.
+* Navegación mediante BottomNavigationView.
 
-El video muestra:
+**Video:**
 
-- Creación de recordatorios
-- Creación de geo-recordatorios
-- Selección de ubicación mediante Google Maps
-- Notificaciones
-- Historial de tareas
-- Configuración de usuario
-- Navegación mediante BottomNavigationView
+`demo/smart-helper-demo.mp4`
 
-## Capturas de pantalla
+---
+
+## 📸 Capturas
 
 ### Inicio
+
 ![Inicio](screenshots/home.png)
 
-### Crear Recordatorio
+### Crear recordatorio
+
 ![Crear Recordatorio](screenshots/create-reminder.png)
 
 ### Recordatorios
+
 ![Recordatorios](screenshots/reminders.png)
 
 ### Historial
+
 ![Historial](screenshots/history.png)
 
 ### Ajustes
+
 ![Ajustes](screenshots/settings.png)
+
+---
 
 ## 📦 Requisitos
 
-- Android 8.0 (API 26) o superior.
-- Google Play Services.
-- Permisos de ubicación.
-- Permisos de notificaciones.
-- Permisos de calendario.
+* Android 8.0 (API 26) o superior.
+* Google Play Services.
+* Permisos de ubicación.
+* Permisos de notificaciones.
+* Permisos de calendario.
 
 ---
 
 ## 🚀 Instalación
 
-1. Clonar el repositorio.
+### Clonar el repositorio
 
 ```bash
 git clone https://github.com/Ing-MairaAlejandraRangel/smart-helper.git
 ```
 
-2. Abrir el proyecto en Android Studio.
+### Ejecutar el proyecto
 
-3. Sincronizar Gradle.
-
-4. Configurar Google Maps API Key.
-
-5. Ejecutar en emulador o dispositivo físico.
+1. Abrir el proyecto en Android Studio.
+2. Sincronizar Gradle.
+3. Configurar la Google Maps API Key.
+4. Ejecutar en un emulador o dispositivo físico compatible.
 
 ---
 
-## ✅ Estado del Proyecto
+## ✅ Estado del proyecto
 
 Proyecto funcional y probado en dispositivo Android físico.
 
-### Funcionalidades verificadas
+Incluye:
 
-- ✔ Creación de recordatorios
-- ✔ Geo-recordatorios
-- ✔ Geofencing
-- ✔ Room Database
-- ✔ Notificaciones
-- ✔ Historial
-- ✔ Configuración de usuario
-- ✔ Reconocimiento de voz
-- ✔ Google Maps
+* ✔ Creación de recordatorios
+* ✔ Geo-recordatorios
+* ✔ Geofencing
+* ✔ Persistencia con Room Database
+* ✔ Notificaciones locales
+* ✔ Historial de actividades
+* ✔ Configuración personalizada
+* ✔ Reconocimiento de voz
+* ✔ Integración con Google Maps
 
 ---
 
-## 👩‍💻 Autora
+# 👩‍💻 Autora
 
-### Maira Alejandra Rangel Murillo
+**Maira Alejandra Rangel Murillo**
+**Ingeniera de Sistemas**
 
-Ingeniera de Sistemas
+Apasionada por el desarrollo de software y la creación de soluciones tecnológicas orientadas a la automatización, la gestión de datos y el desarrollo de aplicaciones web y móviles.
 
 **Áreas de interés:**
 
-- Desarrollo Full Stack
-- Desarrollo Android
-- Backend Development
-- QA Testing
-- Bases de Datos
-- APIs REST
+* 💻 Desarrollo Full Stack
+* ☕ Desarrollo Backend con Java y Spring Boot
+* 🌐 Desarrollo Web con JavaScript y Node.js
+* 📱 Desarrollo de aplicaciones Android
+* 🗄️ Bases de Datos SQL (PostgreSQL y MySQL)
+* 🔗 Diseño e implementación de APIs REST
+* 🧪 Aseguramiento de la calidad (QA) y pruebas de software
 
-### LinkedIn
-
-www.linkedin.com/in/maira-alejandra-rangel-murillo
-
-### GitHub
-
-https://github.com/Ing-MairaAlejandraRangel
-
----
-
-## 📄 Licencia
-
-Proyecto desarrollado con fines académicos y de portafolio profesional.
+Este proyecto fue desarrollado con fines académicos y forma parte de mi portafolio profesional como Ingeniera de Sistemas.
